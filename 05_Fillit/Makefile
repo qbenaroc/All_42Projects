@@ -6,7 +6,7 @@
 #    By: qbenaroc <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/12/06 16:18:57 by qbenaroc          #+#    #+#              #
-#    Updated: 2019/01/04 18:05:05 by qbenaroc         ###   ########.fr        #
+#    Updated: 2019/01/16 11:46:52 by qbenaroc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ $(LIB):
 	@make -C $(LIB_PATH)
 
 $(NAME): $(LIB) $(OBJ_PATH) $(OBJ_EXEC) $(HEADER_PATH)
-	@gcc $(FLAGS) $(OBJ_EXEC) $(LIB) -o $(NAME) -I $(HEADER_PATH) -I $(LIB_PATH)includes/
+	@gcc $(FLAGS) $(OBJ_EXEC) $(LIB) -o $(NAME) -I $(HEADER_PATH)
 	@echo "\033[1;32mFillit\t\t\033[0;32m[Compilation done]\033[0;32m"
 
 clean:
